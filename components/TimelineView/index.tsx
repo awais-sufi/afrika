@@ -1,5 +1,6 @@
 // Write your code here
 import {Chrono} from 'react-chrono'
+import Image from 'next/image'
 
 import ProjectTimelineCard from '../ProjectTimelineCard'
 import CourseTimelineCard from '../CourseTimelineCard'
@@ -38,22 +39,30 @@ const TimelineView = (props: { timelineItemsList: any }) => {
           mode="VERTICAL_ALTERNATING"
         >
            <div className="chrono-icons">
-      <img
+      <Image
         src="https://img.icons8.com/ios-filled/100/000000/twitter.png"
         alt="twitter"
+        width={100}
+        height={100}
       />
       
-      <img
+      <Image
         src="https://img.icons8.com/ios-filled/100/000000/about.png"
         alt="twitter"
+        width={100}
+        height={100}
       />
-      <img
+      <Image
         src="https://img.icons8.com/ios-filled/100/000000/contacts.png"
         alt="twitter"
+        width={100}
+        height={100}
       />
-      <img
+      <Image
         src="https://img.icons8.com/ios-filled/100/000000/info.png"
         alt="twitter"
+        width={100}
+        height={100}
       />
     </div>
           {timelineItemsList.map((eachItem: any) => renderTimelineCard(eachItem))}
